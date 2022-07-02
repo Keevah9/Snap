@@ -1,3 +1,52 @@
 *{
     box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+.sideBar{
+    transform: translate(-100%);
+}
+.sideBtn{
+    transform: translate(0);
+}
+ul{
+    overflow: hidden;
+}
+ul a{
+    
+}
+.dropCon a{
+    /* float: left; */
+    text-align: left;
+    padding: 5px 10px;
+}
+ul a:hover, .dropDown:hover .dropBtn{
+    /* background-color: gray; */
+}
+.dropDown{
+    float: left;
+    overflow: hidden;
+}
+.dropDown .dropBtn{
+    /* padding: 14px 16px; */
+    margin: 0;
+    font-family: inherit;
+}
+.dropCon{
+    display: none;
+    /* position: absolute; */
+    background-color: rgb(200, 197, 197);
+    border-radius: 10px;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropCon a{
+    display: block;
+    float: none;
+}
+.dropCon a:hover{
+    background-color: whitesmoke;
+}
+.dropDown:hover .dropCon{
+    display: block;
 }
